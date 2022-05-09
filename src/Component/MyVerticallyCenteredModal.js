@@ -1,7 +1,6 @@
-import { Button } from "bootstrap";
-import { Modal } from "react-bootstrap";
+import { Modal,Button } from "react-bootstrap";
 
-function SigModal(props) {
+const MyVerticallyCenteredModal=(props) =>{
   return (
     <Modal
       {...props}
@@ -11,7 +10,7 @@ function SigModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+          Signature
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -28,4 +27,5 @@ function SigModal(props) {
     </Modal>
   );
 }
-export default SigModal;
+
+export default MyVerticallyCenteredModal;
