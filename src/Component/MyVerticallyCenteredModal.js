@@ -9,14 +9,14 @@ const MyVerticallyCenteredModal = (props) => {
       alert("Signature on black pad!!");
       return;
     }
-    console.log("SAVED");
+    // console.log("SAVED");
     props.imageurlhandler(
       sigCanvas.current.getTrimmedCanvas().toDataURL("image/png")
     );
     props.onHide(false);
   };
   const clearHandler = () => {
-    console.log("CLEAR");
+    // console.log("CLEAR");
     sigCanvas.current.clear();
   };
   return (
