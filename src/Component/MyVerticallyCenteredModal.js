@@ -41,7 +41,7 @@ const MyVerticallyCenteredModal = (props) => {
       <Modal.Footer>
         <Button onClick={saveHandler}>Save</Button>
         <Button onClick={clearHandler}>Clear</Button>
-        <Button onClick={props.onHide}>Close</Button>
+        {/* <Button onClick={props.onHide}>Close</Button> */}
       </Modal.Footer>
     </Modal>
   );
