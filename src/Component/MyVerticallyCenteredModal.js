@@ -10,10 +10,17 @@ const MyVerticallyCenteredModal = (props) => {
       return;
     }
     // console.log("SAVED");
-    props.imageurlhandler(
-      sigCanvas.current.getTrimmedCanvas().toDataURL("image/png")
-    );
-    props.onHide(false);
+    const fileName = prompt("Name of your signature file : ", "signature");
+    if (fileName.includes(".png")) {
+      alert("Enter Valid filename (without .png)");
+    }
+    else if (fileName) {
+      props.fileNameHandler(fileName);
+      props.imageurlhandler(
+        sigCanvas.current.getTrimmedCanvas().toDataURL("image/png")
+      );
+      props.onHide(false);
+    }
   };
   const clearHandler = () => {
     // console.log("CLEAR");
